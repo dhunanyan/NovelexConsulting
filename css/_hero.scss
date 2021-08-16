@@ -5,10 +5,10 @@
     position: relative;
 
     &__wrapper{
-        background-image: url("../img/hero-background4.jpg");
-        background-position: top left;
+        background-image: url("../img/hero-background11.jpg");
+        background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
 
     &__content{
@@ -18,13 +18,14 @@
         z-index: 1;
     }
 
-    &__title{
-        color: white;
-        font-size: 70px;
+    &__subtitle{
+        color: #ddd;
     }
 
-    &__title--color{
-        color: #317eaa;
+    &__title{
+        color: #ddd;
+        font-size: 70px;
+        font-weight: 700;
     }
 
     .custom-shape-divider-bottom-1625803888 {
@@ -40,11 +41,11 @@
         display: block;
         width: 100%;
         height: 350px;
-        opacity: 0.7;
+        opacity: 0.8;
     }
     
     .custom-shape-divider-bottom-1625803888 .shape-fill {
-        fill: #231F20;
+        fill: #303030;
     }
 }
 
