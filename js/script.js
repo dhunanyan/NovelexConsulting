@@ -26,6 +26,8 @@ const isMobile = {
 	}
 };
 
+//Dropdown
+
 if (isMobile.any()) {
 	document.body.classList.add('_touch');
 

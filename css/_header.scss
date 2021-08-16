@@ -186,7 +186,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
         }
 
         &__link{
-            padding: 10px 0;
+            padding: 25px 0;
         }
 
         &__sub-list {
@@ -195,6 +195,11 @@ body._pc .menu__list > li:hover .menu__sub-list {
             visibility: hidden;
             pointer-events: none;
             transition: all 0.3s ease 0s;
+            width: max-content;
+        }
+
+        &__sub-link{
+            width: max-content;
         }
     }
 }
