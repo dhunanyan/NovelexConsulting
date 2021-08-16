@@ -215,30 +215,32 @@
 			</section>
 
 			<section class="carousel">
-				<div class="carousel__slider slider">
-					<a href="#" class="carousel__item carousel__item--1">
-						<div class="carousel__content">
-							<h2 class="subtitle carousel__subtitle">Who We Are</h2>
-							<p class="descr carousel__descr">We make the world's beautifuul every day</p>
-						</div>
-					</a>
-					<a href="#" class="carousel__item carousel__item--2">
-						<div class="carousel__content">
-							<h2 class="subtitle carousel__subtitle">Our Climate Strategy</h2>
-							<p class="descr carousel__descr">We’re mobilising finance and accelerating innovation to
-								help drive the transition to a global net zero economy.</p>
-						</div>
-					</a>
-					<a href="#" class="carousel__item carousel__item--3">
-						<div class="carousel__content">
-							<h2 class="subtitle carousel__subtitle">Careers</h2>
-							<p class="descr carousel__descr">Build your career at NovelEx</p>
-						</div>
-					</a>
+				<div class="container carousel__container">
+					<div class="carousel__slider slider">
+						<a href="#" class="carousel__item carousel__item--1">
+							<div class="carousel__content">
+								<h2 class="subtitle carousel__subtitle">Who We Are</h2>
+								<p class="descr carousel__descr">We make the world's beautifuul every day</p>
+							</div>
+						</a>
+						<a href="#" class="carousel__item carousel__item--2">
+							<div class="carousel__content">
+								<h2 class="subtitle carousel__subtitle">Our Climate Strategy</h2>
+								<p class="descr carousel__descr">We’re mobilising finance and accelerating innovation to
+									help drive the transition to a global net zero economy.</p>
+							</div>
+						</a>
+						<a href="#" class="carousel__item carousel__item--3">
+							<div class="carousel__content">
+								<h2 class="subtitle carousel__subtitle">Careers</h2>
+								<p class="descr carousel__descr">Build your career at NovelEx</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
-			<section id="#contact" class="contact">
+			<section class="contact">
 				<div class="contact__template">
 					<div class="custom-shape-divider-top-1625840994">
 						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -255,44 +257,33 @@
 						</svg>
 					</div>
 					<div class="container contact__container">
-						<div class="row">
-							<div class="col contact__col d-flex justify-content-center">
-								<h2 class="contact__title">Contact us</h2>
-							</div>
+						<div class="contact__content">
+							<h2 class="title contact__title">Contact Us</h2>
 						</div>
-						<form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;"
-							action="https://docs.google.com/forms/d/e/1FAIpQLSfFcER61j12QX-tqluMoNH_f7Sk09YU6OuY5fwsH1_zyZz2yQ/formResponse">
-							<div class="row">
-								<div class="col contact__col">
-									<input id="entry.1828282789" name="entry.1828282789" type="text"
-										class="form-control" placeholder="First name" aria-label="First name" required>
+						<form class="contact__form" name="gform" action="#" method="GET">
+							<div class="contact__form-body">
+								<div class="contact__row">
+									<div class="contact__col">
+										<input type="text" class="contact__input" placeholder="First name" required>
+									</div>
+									<div class="contact__col">
+										<input type="text" class="contact__input" placeholder="Last name" required>
+									</div>
 								</div>
-								<div class="col contact__col">
-									<input id="entry.2119802368" name="entry.2119802368" type="text"
-										class="form-control" placeholder="Last name" aria-label="Last name" required>
+								<div class="contact__row">
+									<div class="contact__col">
+										<input type="email" class="contact__input" placeholder="E-mail" required>
+									</div>
+									<div class="contact__col">
+										<input type="text" class="contact__input" placeholder="Phone" required>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col contact__col">
-									<input id="entry.1453278681" name="entry.1453278681" type="email"
-										class="form-control" placeholder="E-mail" aria-label="First name" required>
-								</div>
-								<div class="col contact__col">
-									<input id="entry.1914634555" name="entry.1914634555" type="text"
-										class="form-control" placeholder="Phone" aria-label="Last name" required>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col contact__col">
-									<textarea id="entry.990857994" name="entry.990857994"
-										class="form-control form-control--height" placeholder="Message"
+								<div class="contact__row contact__textarea-container">
+									<textarea class="contact__input contact__textarea" placeholder="Message"
 										required></textarea>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col d-flex justify-content-center">
-									<input id="showPopupBtn" class="btn btn-primary btn--color" type="submit"
-										value="Submit">
+								<div class="contact__row">
+									<input class="contact__btn btn btn--black" type="submit" value="Send Message">
 								</div>
 							</div>
 						</form>

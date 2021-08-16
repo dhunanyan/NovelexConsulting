@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 15px;
     }
 
     &__row{
@@ -159,6 +160,7 @@
 
 @media(max-width: 640px){
     .cards{
+        padding: 40px 0 54px 0;
 
         .custom-shape-divider-bottom-1625842421 svg {
             height: 26px;
@@ -171,20 +173,10 @@
 
         &--1{
             width: 100%;
-            padding: 15px 0;
         }
 
         &--2{
             width: 100%;
-            padding: 15px 0;
-        }
-
-        &--3{
-            padding: 15px 0;
-        }
-
-        &--4{
-            padding: 15px 0;
         }
     }
 }

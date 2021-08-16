@@ -10,52 +10,78 @@
     }
 
     &__container{
-        padding-top: 120px;
-        padding-bottom: 40px;
-        position: relative;
-        min-height: 555px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 25px 40px 25px;
     }
 
     &__title{
-        font-size: 42px;
         color: #231F20;
+        margin: 0 0 20px 0;
+    }
+
+    &__form{
+        width: 100%;
+    }
+
+    &__form-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     &__col{
         padding: 5px;
+        width: 50%;
     }
 
-    .form-control{
+    &__input{
+        width: 100%;
         height: 50px;
         background-color: rgba(49, 126, 170, 0.7);
         border-radius: 10px;
-        color: white;
+        color: #fff;
+        padding: 5px;
+        border: 1px solid #fff;
+        transition: all 350ms ease-out;
+    }
+
+    &__input:focus{
+        background-color: #231F20;
+        border: 1px solid #317EAA;
+
+        ::placeholder{
+            color: #317eaa;
+        }
+    }
+
+    &__input:focus::placeholder{
+        color: #317eaa;
+    }
+
+    &__textarea-container{
+        padding: 5px;
+    }
+
+    &__textarea{
+        height: 150px;
+        padding: 15px 0 0 5px;
+    }
+
+    &__btn{
+        margin: 5px auto;
     }
 
     ::placeholder{
         color: white;
-    }
-
-    .form-control--height{
-        height: 150px;
-    }
-
-    .btn{
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-
-    .btn--color{
-        border: 1px solid white;
-        background-color: #317eaa;
-        color: white;
-        padding: 10px 25px;
-    }
-
-    .btn--color:hover,
-    .btn--color:active{
-        background-color: #231F20;
-        color: #317eaa;
     }
 
     .custom-shape-divider-top-1625840994 {
@@ -82,23 +108,26 @@
 
 @media(max-width: 640px){
     .contact{
-
+        
         &__container{
-            padding-top: 60px;
+            padding: 54px 25px 40px 25px;
         }
 
         .custom-shape-divider-top-1625840994 svg {
-            height: 20px;
+            height: 26px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .contact{
+
+        &__row{
+            flex-direction: column;
         }
 
-        .popupContainer__title{
-            text-align: center;
-            font-size: 25px;
-        }
-    
-        .popupContainer__descr{
-            text-align: center;
-            font-size: 14px;
+        &__col{
+            width: 100%;
         }
     }
 }

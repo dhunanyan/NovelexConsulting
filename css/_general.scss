@@ -27,7 +27,8 @@ body{
 }
 
 .title{
-	
+	font-size: 42px;
+	font-weight: 700;
 }
 
 .subtitle{
@@ -44,6 +45,8 @@ body{
 	font-weight: 500;
 	padding: 10px 15px;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: all 350ms ease-out;
 }
 
 .btn--blue{
@@ -55,4 +58,17 @@ body{
 .btn--blue:hover{
 	background-color: #b6b7b7;
 	color: #231F20;
+}
+
+.btn--black{
+	border: 1px solid white;
+	background-color: #317eaa;
+	color: white;
+	padding: 10px 25px;
+}
+
+.btn--black:hover,
+.btn--black:active{
+	background-color: #231F20;
+	color: #317eaa;
 }
