@@ -963,4 +963,160 @@ body._pc .menu__list > li:hover .menu__sub-list {
     width: 100%;
   }
 }
+
+.footer {
+  background-color: #1E1E1E;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__row {
+  width: 100%;
+  margin: 45px 0;
+}
+
+.footer__line {
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  margin: 10px 0;
+}
+
+.footer .icon {
+  font-size: 26px;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.footer i:hover {
+  color: #317eaa;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list > li {
+  margin: 0px 30px 0px 0px;
+}
+
+.nav__list > li:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  font-size: 18px;
+  padding: 5px;
+  color: lightgrey;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.nav__link--small {
+  font-size: 14px;
+}
+
+.nav__link:hover, .nav__link:active {
+  color: #317eaa;
+  -webkit-transform: scale(1.125);
+          transform: scale(1.125);
+}
+
+.nav__link--white:hover, .nav__link--white:active {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social {
+  width: 100%;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__list > li {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px 30px 0px 0px;
+}
+
+.social__list > li:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  font-size: 24px;
+  padding: 5px;
+  color: lightgrey;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.social__link:hover, .social__link:active {
+  color: #317eaa;
+  -webkit-transform: scale(1.125);
+          transform: scale(1.125);
+}
+
+.autograph {
+  background-color: #1E1E1E;
+  padding: 0 0 20px 0;
+}
+
+.autograph__made-by {
+  font-size: 18px;
+  text-align: right;
+  width: 100%;
+}
+
+.autograph__descr {
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1023px) {
+  .nav__list > li {
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
