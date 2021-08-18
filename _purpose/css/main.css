@@ -463,10 +463,23 @@ body._pc .menu__list > li:hover .menu__sub-list {
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 11px -1px #000000;
           box-shadow: 0px 1px 11px -1px #000000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
 }
 
 .purpose__descr {
   margin: 20px 0 0 0;
+}
+
+.purpose:hover .purpose__title::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .footer {
