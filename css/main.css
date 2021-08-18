@@ -883,40 +883,40 @@ body._pc .menu__list > li:hover .menu__sub-list {
   transition: all 350ms ease-out;
 }
 
-.contact__input:focus {
+.contact__input:focus, .contact__input:hover {
   background-color: #231F20;
   border: 1px solid #317EAA;
 }
 
-.contact__input:focus ::-webkit-input-placeholder {
+.contact__input:focus ::-webkit-input-placeholder, .contact__input:hover ::-webkit-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus :-ms-input-placeholder {
+.contact__input:focus :-ms-input-placeholder, .contact__input:hover :-ms-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus ::-ms-input-placeholder {
+.contact__input:focus ::-ms-input-placeholder, .contact__input:hover ::-ms-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus ::placeholder {
+.contact__input:focus ::placeholder, .contact__input:hover ::placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus::-webkit-input-placeholder {
+.contact__input:focus::-webkit-input-placeholder, .contact__input:hover::-webkit-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus:-ms-input-placeholder {
+.contact__input:focus:-ms-input-placeholder, .contact__input:hover:-ms-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus::-ms-input-placeholder {
+.contact__input:focus::-ms-input-placeholder, .contact__input:hover::-ms-input-placeholder {
   color: #317eaa;
 }
 
-.contact__input:focus::placeholder {
+.contact__input:focus::placeholder, .contact__input:hover::placeholder {
   color: #317eaa;
 }
 
@@ -1179,6 +1179,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 .autograph {
   background-color: #1E1E1E;
   padding: 0 0 20px 0;
+  color: lightgrey;
 }
 
 .autograph__made-by {

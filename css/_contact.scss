@@ -55,7 +55,7 @@
         transition: all 350ms ease-out;
     }
 
-    &__input:focus{
+    &__input:focus,&__input:hover{
         background-color: #231F20;
         border: 1px solid #317EAA;
 
@@ -64,7 +64,7 @@
         }
     }
 
-    &__input:focus::placeholder{
+    &__input:focus::placeholder,&__input:hover::placeholder{
         color: #317eaa;
     }
 
