@@ -139,6 +139,13 @@
             height: 5px;
         }
     }
+
+    .carousel{
+
+        &__item{
+            padding: 280px 0 40px 0;
+        }
+    }
 }
 
 @media(max-width: 440px){
@@ -146,6 +153,14 @@
 
         .slick-slide{
             width: 100%;
+        }
+
+        .slick-arrow.slick-prev{
+            left: 10px;
+        }
+    
+        .slick-arrow.slick-next{
+            right: 10px;
         }
     }
 }
