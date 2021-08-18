@@ -156,8 +156,13 @@ body._pc .menu__list > li:hover .menu__sub-list {
             width: max-content;
         }
 
+        &__sub-list > li{
+            display: flex;
+        }
+
         &__sub-link{
-            width: max-content;
+            width: 100%;
+            font-size: 16px;
         }
     }
 }
