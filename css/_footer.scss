@@ -17,16 +17,6 @@
         border-bottom: 2px solid lightgrey;
         margin: 10px 0;
     }
-
-    .icon{
-        font-size: 26px;
-        transition: all 450ms ease-in-out
-    }
-
-    i:hover{
-        color: #317eaa;
-        transform: scale(1.5);
-    }
 }
 
 .nav{
@@ -57,6 +47,7 @@
 
         &--small{
             font-size: 14px;
+            color: lightgrey;
         }
     }
 
@@ -83,7 +74,6 @@
     }
 
     &__list > li {
-        flex-wrap: wrap;
         margin: 0px 30px 0px 0px;
     }
 
@@ -92,16 +82,20 @@
     }
 
     &__link{
-        font-size:  24px;
+        font-size: 24px;
         padding: 5px;
         color: lightgrey;
-        transition: all 450ms ease-in-out;
-    }
 
-    &__link:hover,
-    &__link:active{
-        color: #317eaa;
-        transform: scale(1.125);
+        i{
+            font-size: 24px;
+            transition: all 450ms ease-in-out;
+        }
+
+        i:hover,
+        i:active{
+            color: #317eaa;
+            transform: scale(1.25);
+        }
     }
 }
 

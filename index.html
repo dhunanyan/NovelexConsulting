@@ -17,7 +17,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container container">
-				<a href="#" class="header__logo"><img src="img/logo-main.png" alt="Logo"></a>
+				<a data-goto=".hero" href="#" class="header__logo"><img src="img/logo-main.png" alt="Logo"></a>
 				<div class="header__menu menu">
 					<div class="menu__icon">
 						<span></span>
@@ -79,16 +79,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#" class="menu__link">Contact</a>
-								<span class="menu__arrow"></span>
-								<ul class="menu__sub-list">
-									<li>
-										<a href="#" class="menu__sub-link">Contact - General</a>
-									</li>
-									<li>
-										<a href="#" class="menu__sub-link">Contact - Request Services</a>
-									</li>
-								</ul>
+								<a data-goto=".contact" href="#" class="menu__link">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -265,26 +256,26 @@
 							<div class="contact__form-body">
 								<div class="contact__row">
 									<div class="contact__col">
-										<input type="text" class="contact__input" id="firstName" name="firstName"
+										<input type="text" class="contact__input" id="First-Name" name="First-Name"
 											placeholder="First name" required>
 									</div>
 									<div class="contact__col">
-										<input type="text" class="contact__input" id="lastName" name="lastName"
+										<input type="text" class="contact__input" id="Last-Name" name="Last-Name"
 											placeholder="Last name" required>
 									</div>
 								</div>
 								<div class="contact__row">
 									<div class="contact__col">
-										<input type="email" class="contact__input" id="email" name="email"
+										<input type="email" class="contact__input" id="E-mail" name="E-mail"
 											placeholder="E-mail" required>
 									</div>
 									<div class="contact__col">
-										<input type="text" class="contact__input" id="phone" name="phone"
+										<input type="text" class="contact__input" id="Phone" name="Phone"
 											placeholder="Phone" required>
 									</div>
 								</div>
 								<div class="contact__row contact__textarea-container">
-									<textarea class="contact__input contact__textarea" id="message" name="message"
+									<textarea class="contact__input contact__textarea" id="Message" name="Message"
 										placeholder="Message" required></textarea>
 								</div>
 								<div class="contact__row">

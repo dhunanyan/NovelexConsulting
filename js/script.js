@@ -26,7 +26,7 @@ const isMobile = {
 	}
 };
 
-//Dropdown
+//DROPDOWN
 
 if (isMobile.any()) {
 	document.body.classList.add('_touch');
@@ -45,7 +45,7 @@ if (isMobile.any()) {
 	document.body.classList.add('_pc');
 }
 
-// Меню бургер
+//MENU BURGER
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
@@ -57,14 +57,14 @@ if (iconMenu) {
 }
 
 
-// Прокрутка при клике
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+//SCROLL
+const menuLinks = document.querySelectorAll('[data-goto]');
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
-		menuLink.addEventListener("click", onMenuLinkClick);
+		menuLink.addEventListener("click", onLinkClick);
 	});
 
-	function onMenuLinkClick(e) {
+	function onLinkClick(e) {
 		const menuLink = e.target;
 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
@@ -85,7 +85,7 @@ if (menuLinks.length > 0) {
 	}
 }
 
-//Slider
+//SLIDER
 
 $(document).ready(function () {
 	$('.slider').slick({
@@ -134,7 +134,7 @@ $(document).ready(function () {
 	});
 });
 
-//Contact Form
+//CONTACT FORM
 
 window.addEventListener("DOMContentLoaded", function () {
 	// get the form elements defined in your form HTML above
@@ -148,12 +148,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	function success() {
 		form.reset();
 		status.classList.add("success");
-		status.innerHTML = "Thanks you for your message!";
+		status.innerHTML = "Thanks for your message! We will contact you as soon as possible.";
 	}
 
 	function error() {
 		status.classList.add("error");
-		status.innerHTML = "Oops! There was a problem.";
+		status.innerHTML = "Oops! There was a problem. Please try later or use other contact channels";
 	}
 
 	// handle the form submission event
