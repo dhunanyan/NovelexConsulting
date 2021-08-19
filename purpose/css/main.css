@@ -400,7 +400,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 
 .purpose {
   font-size: 16px;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: rgba(182, 183, 183, 0.9);
 }
 
@@ -409,7 +409,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .purpose--top-padding {
-  padding: 120px 0 40px 0;
+  padding-top: 160px;
 }
 
 .purpose__container {
