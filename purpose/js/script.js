@@ -129,15 +129,15 @@ const scene2 = new ScrollMagic.Scene({
     .addTo(controller);
 
 tl3.from(".strategy__title", 1, { x: 50, opacity: 0 });
-tl3.from(".strategy__line", 1, { width: 0 }, "=-.1");
+tl3.from(".strategy__line", 1, { width: 0 }, "=-.5");
 
-const scene4 = new ScrollMagic.Scene({
-    triggerElement: "#partners",
+const scene3 = new ScrollMagic.Scene({
+    triggerElement: "#strategy",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#partner")
-    .setTween(tl4)
+    .setPin("#strategys")
+    .setTween(tl3)
     .addTo(controller);
 
 
