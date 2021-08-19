@@ -56,6 +56,35 @@ if (iconMenu) {
 	});
 }
 
+
+//MENU SCROLLTO
+const menuLinks = document.querySelectorAll('[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onLinkClick);
+	});
+
+	function onLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
+			}
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: "smooth"
+			});
+			e.preventDefault();
+		}
+	}
+}
+
 //SCROLLBY
 
 document.querySelectorAll('a.yakor').forEach(link => {
