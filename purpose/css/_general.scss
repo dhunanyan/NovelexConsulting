@@ -20,6 +20,10 @@ body{
     font-family: 'gotham';
 }
 
+.wrapper{
+	position: relative;
+}
+
 .container{
 	max-width: 1200px;
     margin: 0px auto;
@@ -47,6 +51,7 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 350ms ease-out;
+	box-shadow:0px 1px 11px -1px #000000;
 }
 
 .btn--blue{
@@ -61,16 +66,18 @@ body{
 }
 
 .btn--black{
-	border: 1px solid white;
-	background-color: #317eaa;
-	color: white;
+	border: 1px solid #b6b7b7;
+	background-color: #231F20;
+	color: #b6b7b7;
 	padding: 10px 25px;
 }
 
 .btn--black:hover,
-.btn--black:active{
-	background-color: #231F20;
-	color: #317eaa;
+.btn--black:active,
+.btn--black:focus{
+	background-color: #b6b7b7;
+	color: #231F20;
+	border: 1px solid #231F20;
 }
 
 @keyframes status{
