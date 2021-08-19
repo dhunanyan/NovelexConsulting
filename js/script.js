@@ -103,6 +103,12 @@ document.querySelectorAll('a.yakor').forEach(link => {
 			top: offsetPosition,
 			behavior: 'smooth'
 		});
+
+		if (iconMenu.classList.contains('_active')) {
+			document.body.classList.remove('_lock');
+			iconMenu.classList.remove('_active');
+			menuBody.classList.remove('_active');
+		}
 	});
 })
 
