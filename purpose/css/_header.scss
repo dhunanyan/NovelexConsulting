@@ -61,7 +61,8 @@ body._lock {
         font-size: 18px;
     }
 
-    &__link:hover {
+    &__link:hover,
+    &__link.active {
         color: #fff;
     }
 
@@ -156,8 +157,13 @@ body._pc .menu__list > li:hover .menu__sub-list {
             width: max-content;
         }
 
+        &__sub-list > li{
+            display: flex;
+        }
+
         &__sub-link{
             font-size: 16px;
+            width: 100%;
         }
     }
 }

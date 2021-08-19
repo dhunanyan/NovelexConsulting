@@ -2,19 +2,13 @@ body._lock {
 	overflow: hidden;
 }
 
-/* ------------------ */
-/* ------------------ */
-/* ------------------ */
-
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
-    z-index: 50;
 	width: 100%;
 	z-index: 100;
 	background-color: #303030;
-    box-shadow:0px 1px 11px -1px #000000;
 
     &__container {
         display: flex;
@@ -22,7 +16,7 @@ body._lock {
         justify-content: space-between;
         min-height: 70px;
     }
-
+    
     &__logo {
         position: relative;
         z-index: 5;
@@ -56,7 +50,7 @@ body._lock {
         margin: 0px 0px 0px 20px;
     }
 
-    &__link {
+    .menu__link {
         color: #ddd;
         font-size: 18px;
     }
@@ -72,8 +66,6 @@ body._lock {
         background-color: #303030;
         padding: 15px;
         min-width: 200px;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
     }
 
     &__sub-list li {
@@ -130,12 +122,12 @@ body._touch .menu__list > li._active .menu__arrow {
 body._pc .menu__list > li:hover .menu__sub-list {
 	opacity: 1;
 	visibility: visible;
-	transform: translate(0px, 25px);
+	transform: translate(0px, 10px);
 	pointer-events: all;
 }
 
 /* ----------------------- */
-@media (min-width: 851px) {
+@media (min-width: 767px) {
 	.menu{
 
         &__list {
@@ -143,8 +135,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
             align-items: center;
         }
 
-        &__link{
-            padding: 25px 0;
+        &__list > li {
+            padding: 10px 0;
         }
 
         &__sub-list {
@@ -153,23 +145,11 @@ body._pc .menu__list > li:hover .menu__sub-list {
             visibility: hidden;
             pointer-events: none;
             transition: all 0.3s ease 0s;
-            width: max-content;
-        }
-
-        &__sub-list > li{
-            display: flex;
-        }
-
-        &__sub-link{
-            width: 100%;
-            font-size: 16px;
         }
     }
 }
-
-@media (max-width: 851px) {
+@media (max-width: 767px) {
     .menu{
-
         &__icon {
             z-index: 5;
             display: block;
@@ -262,7 +242,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
             display: block;
         }
 
-        &__link{
+        &__link {
             font-size: 24px;
         }
 

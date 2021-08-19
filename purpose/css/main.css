@@ -174,7 +174,7 @@ body._lock {
   font-size: 18px;
 }
 
-.menu__link:hover {
+.menu__link:hover, .menu__link.active {
   color: #fff;
 }
 
@@ -285,8 +285,14 @@ body._pc .menu__list > li:hover .menu__sub-list {
     width: -moz-max-content;
     width: max-content;
   }
+  .menu__sub-list > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .menu__sub-link {
     font-size: 16px;
+    width: 100%;
   }
 }
 
