@@ -21,7 +21,7 @@
         text-align: center;
     }
 
-    &__title::after{
+    &__line{
         content: '';
         left: calc(50% - 100px);
         bottom: 0;

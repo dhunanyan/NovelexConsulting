@@ -1,7 +1,7 @@
 .purpose{
     font-size: 16px;
     padding: 80px 0;
-    background-color: rgba(182, 183, 183, 0.9);
+    background-color: rgba(196, 197, 197, 0.9);
 
     &--dark{
         background-color: #a7a7a7;
@@ -47,8 +47,7 @@
         color: #303030;
     }
 
-    &__title::after{
-        content: '';
+    &__line{
         left: 0;
         bottom: 0;
         position: absolute;
@@ -63,19 +62,6 @@
 
     &__descr{
         margin: 20px 0 0 0;
-    }
-}
-
-@media(hover){
-    .purpose{
-        
-        &__title::after{
-            transform: scaleX(0);
-        }
-    }
-
-    .purpose:hover .purpose__title::after{
-        transform: scaleX(1);
     }
 }
 
