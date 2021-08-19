@@ -2,6 +2,10 @@ body._lock {
 	overflow: hidden;
 }
 
+.active{
+    color: #fff;
+}
+
 /* ------------------ */
 /* ------------------ */
 /* ------------------ */
@@ -61,8 +65,7 @@ body._lock {
         font-size: 18px;
     }
 
-    &__link:hover,
-    &__link.active {
+    &__link:hover {
         color: #fff;
     }
 
