@@ -285,13 +285,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
     width: -moz-max-content;
     width: max-content;
   }
-  .menu__sub-list > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .menu__sub-link {
-    width: 100%;
     font-size: 16px;
   }
 }
