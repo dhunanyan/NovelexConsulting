@@ -83,10 +83,9 @@ var tl = new TimelineMax({ onUpdate: updatePercentage });
 var tl1 = new TimelineMax({ onUpdate: updatePercentage });
 var tl2 = new TimelineMax({ onUpdate: updatePercentage });
 var tl3 = new TimelineMax({ onUpdate: updatePercentage });
-var tl4 = new TimelineMax({ onUpdate: updatePercentage });
 const controller = new ScrollMagic.Controller();
 
-tl.from(".purpose-title", 0.5, { x: 200, opacity: 0 });
+tl.from(".purpose-title", 1, { x: 50, opacity: 0 });
 tl.from(".purpose-line", 1, { width: 0 }, "=-.5");
 
 const scene = new ScrollMagic.Scene({
@@ -99,7 +98,7 @@ const scene = new ScrollMagic.Scene({
     .addTo(controller);
 
 
-tl1.from(".value__title", 0.5, { x: 200, opacity: 0 });
+tl1.from(".value__title", 1, { x: 50, opacity: 0 });
 tl1.from(".value__line", 1, { width: 0 }, "=-.5");
 
 const scene1 = new ScrollMagic.Scene({
@@ -111,7 +110,7 @@ const scene1 = new ScrollMagic.Scene({
     .setTween(tl1)
     .addTo(controller);
 
-tl2.from(".mission__title", 0.5, { x: 200, opacity: 0 });
+tl2.from(".mission__title", 1, { x: 50, opacity: 0 });
 tl2.from(".mission__line", 1, { width: 0 }, "=-.5");
 
 const scene2 = new ScrollMagic.Scene({
@@ -123,20 +122,8 @@ const scene2 = new ScrollMagic.Scene({
     .setTween(tl2)
     .addTo(controller);
 
-tl3.from(".strategy__title", 0.5, { x: 200, opacity: 0 });
+tl3.from(".strategy__title", 1, { x: 50, opacity: 0 });
 tl3.from(".strategy__line", 1, { width: 0 }, "=-.1");
-
-const scene3 = new ScrollMagic.Scene({
-    triggerElement: "#strategy",
-    triggerHook: "onEnter",
-    duration: "100%"
-})
-    .setPin("#strategys")
-    .setTween(tl3)
-    .addTo(controller);
-
-tl4.from(".partners__title", 0.5, { x: 200, opacity: 0 });
-tl4.from(".partners__line", 1, { width: 0 }, "=-.1");
 
 const scene4 = new ScrollMagic.Scene({
     triggerElement: "#partners",
@@ -154,6 +141,8 @@ function updatePercentage() {
     tl1.progress();
     tl2.progress();
     tl3.progress();
-    tl4.progress();
     console.log(tl.progress());
+    console.log(tl1.progress());
+    console.log(tl2.progress());
+    console.log(tl3.progress());
 }

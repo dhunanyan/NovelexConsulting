@@ -522,6 +522,9 @@ body._pc .menu__list > li:hover .menu__sub-list {
   .purpose__title {
     font-size: 36px;
   }
+  .purpose__line {
+    width: 100%;
+  }
   .purpose__square-img {
     display: block;
   }
@@ -552,7 +555,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 
 .partners__template {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px 0;
+  padding: 70px 0;
 }
 
 .partners__title {
@@ -563,11 +566,11 @@ body._pc .menu__list > li:hover .menu__sub-list {
 
 .partners__line {
   content: '';
-  left: calc(50% - 100px);
+  left: calc(50% - 50px);
   bottom: 0;
   position: absolute;
   height: 4px;
-  width: 200px;
+  width: 100px;
   background-color: #303030;
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 11px -1px #000000;
@@ -597,7 +600,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 .partners__img {
   width: 25%;
   margin: 15px;
-  min-width: 132px;
+  min-width: 120px;
 }
 
 .partners__img img {
