@@ -518,7 +518,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 450px) {
   .purpose__title {
     font-size: 36px;
   }
