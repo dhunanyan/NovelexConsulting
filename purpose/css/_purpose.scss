@@ -57,8 +57,6 @@
         background-color: #303030;
         border-radius: 5px;
         box-shadow:0px 1px 11px -1px #000000;
-        transform: scaleX(0);
-        transform-origin: left;
 
         transition: transform 500ms linear;
     }
@@ -68,8 +66,17 @@
     }
 }
 
-.purpose:hover .purpose__title::after{
-    transform: scaleX(1);
+@media(hover){
+    .purpose{
+        
+        &__title::after{
+            transform: scaleX(0);
+        }
+    }
+
+    .purpose:hover .purpose__title::after{
+        transform: scaleX(1);
+    }
 }
 
 @media(max-width: 920px){
