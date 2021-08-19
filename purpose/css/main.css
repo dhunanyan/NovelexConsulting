@@ -491,28 +491,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
           transform: scaleX(1);
 }
 
-.buttons {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.buttons__btn {
-  margin: 5px;
-  border-radius: 10px;
-}
-
 @media (max-width: 920px) {
   .purpose__square-img {
     display: block;
@@ -546,13 +524,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-  }
-}
-
-@media (max-width: 518px) {
-  .buttons__btn {
-    padding: 5px 10px;
-    font-size: 14px;
   }
 }
 
