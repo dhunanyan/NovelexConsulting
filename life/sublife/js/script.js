@@ -94,11 +94,11 @@ tl.from(".purpose-title", 1, { x: 50, opacity: 0 });
 tl.from(".purpose-line", 1, { width: 0 }, "=-.5");
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: "#language",
+    triggerElement: "#inclusion",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#languages")
+    .setPin("#inclusions")
     .setTween(tl1)
     .addTo(controller);
 
@@ -107,11 +107,11 @@ tl1.from(".value__title", 1, { x: 50, opacity: 0 });
 tl1.from(".value__line", 1, { width: 0 }, "=-.5");
 
 const scene1 = new ScrollMagic.Scene({
-    triggerElement: "#digital",
+    triggerElement: "#learning",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#digitals")
+    .setPin("#learnings")
     .setTween(tl1)
     .addTo(controller);
 
@@ -119,11 +119,11 @@ tl2.from(".mission__title", 1, { x: 50, opacity: 0 });
 tl2.from(".mission__line", 1, { width: 0 }, "=-.5");
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: "#hire",
+    triggerElement: "#support",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#hires")
+    .setPin("#supports")
     .setTween(tl2)
     .addTo(controller);
 
