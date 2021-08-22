@@ -84,55 +84,56 @@ document.querySelectorAll('a.yakor').forEach(link => {
 })
 
 //MAGIC SCROLL
+if (!isMobile.any()){
+    var tl = new TimelineMax({ onUpdate: updatePercentage });
+    var tl1 = new TimelineMax({ onUpdate: updatePercentage });
+    var tl2 = new TimelineMax({ onUpdate: updatePercentage });
+    const controller = new ScrollMagic.Controller();
 
-var tl = new TimelineMax({ onUpdate: updatePercentage });
-var tl1 = new TimelineMax({ onUpdate: updatePercentage });
-var tl2 = new TimelineMax({ onUpdate: updatePercentage });
-const controller = new ScrollMagic.Controller();
+    tl.from(".purpose-title", 1, { x: 50, opacity: 0 });
+    tl.from(".purpose-line", 1, { width: 0 }, "=-.5");
 
-tl.from(".purpose-title", 1, { x: 50, opacity: 0 });
-tl.from(".purpose-line", 1, { width: 0 }, "=-.5");
-
-const scene = new ScrollMagic.Scene({
-    triggerElement: "#inclusion",
-    triggerHook: "onEnter",
-    duration: "100%"
-})
-    .setPin("#inclusions")
-    .setTween(tl1)
-    .addTo(controller);
+    const scene = new ScrollMagic.Scene({
+        triggerElement: "#inclusion",
+        triggerHook: "onEnter",
+        duration: "100%"
+    })
+        .setPin("#inclusions")
+        .setTween(tl1)
+        .addTo(controller);
 
 
-tl1.from(".value__title", 1, { x: 50, opacity: 0 });
-tl1.from(".value__line", 1, { width: 0 }, "=-.5");
+    tl1.from(".value__title", 1, { x: 50, opacity: 0 });
+    tl1.from(".value__line", 1, { width: 0 }, "=-.5");
 
-const scene1 = new ScrollMagic.Scene({
-    triggerElement: "#learning",
-    triggerHook: "onEnter",
-    duration: "100%"
-})
-    .setPin("#learnings")
-    .setTween(tl1)
-    .addTo(controller);
+    const scene1 = new ScrollMagic.Scene({
+        triggerElement: "#learning",
+        triggerHook: "onEnter",
+        duration: "100%"
+    })
+        .setPin("#learnings")
+        .setTween(tl1)
+        .addTo(controller);
 
-tl2.from(".mission__title", 1, { x: 50, opacity: 0 });
-tl2.from(".mission__line", 1, { width: 0 }, "=-.5");
+    tl2.from(".mission__title", 1, { x: 50, opacity: 0 });
+    tl2.from(".mission__line", 1, { width: 0 }, "=-.5");
 
-const scene2 = new ScrollMagic.Scene({
-    triggerElement: "#support",
-    triggerHook: "onEnter",
-    duration: "100%"
-})
-    .setPin("#supports")
-    .setTween(tl2)
-    .addTo(controller);
+    const scene2 = new ScrollMagic.Scene({
+        triggerElement: "#support",
+        triggerHook: "onEnter",
+        duration: "100%"
+    })
+        .setPin("#supports")
+        .setTween(tl2)
+        .addTo(controller);
 
-function updatePercentage() {
-    //percent.innerHTML = (tl.progress() *100 ).toFixed();
-    tl.progress();
-    tl1.progress();
-    tl2.progress();
-    console.log(tl.progress());
-    console.log(tl1.progress());
-    console.log(tl2.progress());
+    function updatePercentage() {
+        //percent.innerHTML = (tl.progress() *100 ).toFixed();
+        tl.progress();
+        tl1.progress();
+        tl2.progress();
+        console.log(tl.progress());
+        console.log(tl1.progress());
+        console.log(tl2.progress());
+    }
 }

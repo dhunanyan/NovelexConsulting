@@ -67,6 +67,15 @@
     }
 }
 
+@media(max-width: 1055px){
+    .purpose{
+        
+        &__title{
+            font-size: 28px;
+        }
+    }
+}
+
 @media(max-width: 835px){
     .purpose{
 
@@ -92,12 +101,17 @@
 @media(max-width: 477px){
     .purpose{
 
-        &__title{
-            font-size: 28px;
-        }
-
         &__line{
             width: 100%;
+        }
+    }
+}
+
+@media(max-width: 425px){
+    .purpose{
+        
+        &__title{
+            font-size: 28px;
         }
     }
 }

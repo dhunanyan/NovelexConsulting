@@ -499,6 +499,12 @@ body._pc .menu__list > li:hover .menu__sub-list {
   margin: 20px 0 0 0;
 }
 
+@media (max-width: 1055px) {
+  .purpose__title {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 835px) {
   .purpose__container {
     -webkit-box-orient: vertical;
@@ -521,11 +527,14 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 @media (max-width: 477px) {
-  .purpose__title {
-    font-size: 28px;
-  }
   .purpose__line {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .purpose__title {
+    font-size: 28px;
   }
 }
 
