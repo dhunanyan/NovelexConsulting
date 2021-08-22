@@ -479,6 +479,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .card__content {
+  min-height: 250px;
   --padding: 1.5rem;
   padding: var(--padding);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, rgba(176, 0, 224, 0.8)), to(black));
@@ -490,6 +491,9 @@ body._pc .menu__list > li:hover .menu__sub-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card__subtitle {

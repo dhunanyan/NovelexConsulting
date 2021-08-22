@@ -397,8 +397,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .hero__template {
-  background-image: url("../img/hero-background1.jpg");
-  background-position: top;
+  background-image: url("../img/hero-background3.jpg");
+  background-position: 35% 100%;
   background-size: cover;
   background-repeat: repeat;
   padding: 10px 0 80px 0;
@@ -428,14 +428,13 @@ body._pc .menu__list > li:hover .menu__sub-list {
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-accent-400: rgb(178, 153, 109);
+  --clr-accent-400: #26b0cc;
 }
 
 .cards {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#231F20), color-stop(#b2996d), to(#231F20));
-  background-image: linear-gradient(180deg, #231F20, #b2996d, #231F20);
+  background-image: linear-gradient(135deg, #008da1, #303030 65%);
   position: relative;
-  padding: 40px 0 120px 0;
+  padding: 80px 0;
   font-size: 16px;
 }
 
@@ -464,51 +463,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
           align-items: center;
 }
 
-.cards .custom-shape-divider-bottom-1625819167 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.cards .custom-shape-divider-bottom-1625819167 svg {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 40px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.cards .custom-shape-divider-bottom-1625819167 .shape-fill {
-  fill: #231F20;
-}
-
-.cards .custom-shape-divider-bottom-1625842421 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.cards .custom-shape-divider-bottom-1625842421 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 80px;
-}
-
-.cards .custom-shape-divider-bottom-1625842421 .shape-fill {
-  fill: #b6b7b7;
-}
-
 .card {
   color: var(--clr-neutral-100);
   padding: 10rem 0 0;
@@ -523,30 +477,31 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .card--1 {
-  background-image: url(../img/card-laptop.jpg);
-  background-position: bottom center;
+  background-image: url(../img/purpose6.jpg);
+  background-position: center;
   background-size: cover;
 }
 
 .card--2 {
-  background-image: url(../img/card-building.jpg);
-  background-position: bottom center;
+  background-image: url(../img/values.jpg);
+  background-position: 100% 45%;
   background-size: cover;
 }
 
 .card--3 {
-  background-image: url(../img/card-paper.jpg);
+  background-image: url(../img/mission2.jpg);
   background-position: bottom center;
-  background-size: cover;
+  background-size: 110%;
 }
 
 .card--4 {
-  background-image: url(../img/card-strategy.jpg);
-  background-position: bottom center;
+  background-image: url(../img/strategy2.jpg);
+  background-position: center;
   background-size: cover;
 }
 
 .card__content {
+  min-height: 250px;
   --padding: 1.5rem;
   padding: var(--padding);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, rgba(48, 48, 48, 0.8)), to(black));
@@ -558,6 +513,9 @@ body._pc .menu__list > li:hover .menu__sub-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card__subtitle {
