@@ -425,6 +425,24 @@ body._pc .menu__list > li:hover .menu__sub-list {
   margin: 0 0 0 10px;
 }
 
+@media (max-width: 991px) {
+  .hero__title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero__title {
+    font-size: 40px;
+  }
+}
+
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);

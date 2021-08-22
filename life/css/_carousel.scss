@@ -17,7 +17,7 @@
         margin: 0 0 60px 0;
         position: absolute;
         z-index: 11;
-        top: calc(50% - 30px);
+        top: 30px;
     }
 
     &__title{
@@ -169,7 +169,7 @@
     .carousel{
 
         &__item{
-            padding: 280px 0 40px 0;
+            padding: 280px 30px 40px 30px;
         }
     }
 }
