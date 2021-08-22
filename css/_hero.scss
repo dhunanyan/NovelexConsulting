@@ -20,6 +20,16 @@
 
     &__subtitle{
         color: #ddd;
+        display: flex;
+        align-items: center;
+    }
+
+    &__line{
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 0 0 10px;
     }
 
     &__title{

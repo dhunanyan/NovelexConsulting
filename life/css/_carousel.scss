@@ -1,0 +1,192 @@
+.carousel{
+    background-image: linear-gradient(180deg,#231F20, #387469, #231F20);
+    padding: 80px 0;
+    font-size: 16px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 60px 0;
+        position: absolute;
+        z-index: 11;
+        top: calc(50% - 30px);
+    }
+
+    &__title{
+        color: #fff;
+    }
+
+    &__line{
+        margin: 15px 0 0 0;
+    }
+
+    &__item{
+        width: 100%;
+        padding: 350px 60px 70px 60px;
+        border-radius: 10px;
+
+        &--3{
+            background-image: url("../img/carousel5.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        &--2{
+            background-image: url("../img/carousel4.jpg");
+            background-position: center 40%;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        &--1{
+            background-image: url("../img/carousel6.jpg");
+            background-position: 100% 70%;
+            background-size: cover;
+            background-repeat: repeat;
+        }
+    }
+
+    &__subcontent{
+        text-align: center;
+        color: #fff;
+    }
+
+    &__subtitle{
+        margin: 0 0 20px 0;
+    }
+}
+
+.slick{
+
+    &-slider{
+
+    }
+
+    &-list{
+        overflow: hidden;
+    }
+
+    &-track{
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.slider{
+    min-width: 0;
+    max-width: 100%;
+    position: relative;
+
+    .slick-arrow{
+        position: absolute;
+        top: calc(50% - 25px);
+        z-index: 10;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+
+    }
+
+    .slick-arrow.slick-prev{
+        left: 30px;
+        background-image: url('../img/prev.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .slick-arrow.slick-next{
+        right: 30px;
+        background-image: url('../img/next.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .slick-arrow.slick-disabled{
+        opacity: 0.2;
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% - 90px);
+    }
+
+    .slick-dots li{
+        margin: 0 25px;
+    }
+
+    .slick-dots button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0px 0px 0px 1px #fff;
+        border-radius: 50%;
+        background-color: transparent;
+    } 
+
+    .slick-dots li.slick-active button{
+        background-color: #fff;
+    }
+}
+
+@media(max-width: 682px){
+    .slider{
+
+        .slick-arrow{
+            width: 25px;
+            height: 25px;
+            top: calc(50% - 12.5px)
+        }
+
+        .slick-dots li{
+            margin: 0 15px;
+        }
+
+        .slick-dots{
+            left: calc(50% - 55.25px);
+        }
+
+        .slick-dots button{
+            width: 5px;
+            height: 5px;
+        }
+    }
+
+    .carousel{
+
+        &__item{
+            padding: 280px 0 40px 0;
+        }
+    }
+}
+
+@media(max-width: 440px){
+    .slider{
+
+        .slick-slide{
+            width: 100%;
+        }
+
+        .slick-arrow.slick-prev{
+            left: 10px;
+        }
+    
+        .slick-arrow.slick-next{
+            right: 10px;
+        }
+    }
+}

@@ -391,7 +391,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .hero {
-  padding: 70px 0;
+  padding: 80px 0;
   font-size: 16px;
   color: #fff;
   background-image: url("../img/hero-background10.jpg");
@@ -431,7 +431,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(#b000e1), to(#000));
   background-image: linear-gradient(#000, #b000e1, #000);
   position: relative;
-  padding: 70px 0;
+  padding: 80px 0;
   font-size: 16px;
 }
 
@@ -538,9 +538,9 @@ body._pc .menu__list > li:hover .menu__sub-list {
   transition: all 450ms ease-out;
 }
 
-.card__btn2:hover, .card__btn2:focus {
-  background-color: #c4009a;
-  color: var(--clr-accent-400);
+.card__btn:hover, .card__btn:focus {
+  background-color: var(--clr-neutral-100);
+  color: #c4009a;
 }
 
 .card:hover .card__subtitle::after,

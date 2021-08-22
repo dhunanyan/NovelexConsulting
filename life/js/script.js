@@ -83,3 +83,52 @@ document.querySelectorAll('a.yakor').forEach(link => {
     });
 })
 
+//SLIDER
+
+$(document).ready(function () {
+	$('.slider').slick({
+		arrows: true,
+		dots: true,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed: 500,
+		easing: 'ease-out',
+		infinite: true,
+		initialSlide: 0,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		draggable: true,
+		swipe: true,
+		touchTreshold: 5,
+		touchMove: true,
+		waitForAnimate: false,
+		centerMode: false,
+		variableWidth: false,
+		rows: 1,
+		slidesPerRow: 1,
+		vertical: false,
+		verticalSwiping: false,
+		fade: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+
+			{
+				breakpoint: 682,
+				settings: {
+					centerMode: false
+				}
+			}
+		],
+		mobileFirst: false
+	});
+});
+

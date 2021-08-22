@@ -91,3 +91,12 @@ body{
 		display: none
 	}
 }
+
+.line{
+	display: inline-block;
+	height: 4px;
+	width: 120px;;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow:0px 1px 11px -1px #000000;
+}

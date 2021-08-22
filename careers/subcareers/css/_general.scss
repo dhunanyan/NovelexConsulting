@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'gotham';
+	src: url('../fonts/gotham-bold/gothambold1.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+	font-family: 'gotham';
+	src: url('../fonts/gotham-medium-regular/gotham-medium-webfont.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+	font-family: 'gotham';
+	src: url('../fonts/gotham-book/GothamBook.woff') format('woff');
+    font-weight: 400;
+}
+
+body{
+    font-family: 'gotham';
+}
+
+.wrapper{
+	position: relative;
+	background-color: #303030;
+}
+
+.container{
+	max-width: 1200px;
+    margin: 0px auto;
+	padding: 0px 30px;
+}
+
+.title{
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.subtitle{
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.descr{
+	line-height: 22px;
+}
+
+.btn{
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 350ms ease-out;
+	box-shadow:0px 1px 11px -1px #000000;
+}
+
+.btn--blue{
+	background-color: #317eaa;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn--blue:hover{
+	background-color: #b6b7b7;
+	color: #231F20;
+}
+
+.btn--black{
+	border: 1px solid #b6b7b7;
+	background-color: #231F20;
+	color: #b6b7b7;
+	padding: 10px 25px;
+}
+
+.btn--black:hover,
+.btn--black:active,
+.btn--black:focus{
+	background-color: #b6b7b7;
+	color: #231F20;
+	border: 1px solid #231F20;
+}
+
+@keyframes status{
+	0%{
+		opacity: 1;
+		pointer-events: all;
+		display: block;
+	}
+
+	90%{
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	100%{
+		opacity: 0;
+		pointer-events: none;
+		display: none
+	}
+}
