@@ -419,11 +419,12 @@ body._pc .menu__list > li:hover .menu__sub-list {
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-accent-400: #A88ADD;
+  --clr-accent-400: #b000e1;
 }
 
 .cards {
-  background-color: #9167da;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(#b000e1), to(#000));
+  background-image: linear-gradient(#000, #b000e1, #000);
   position: relative;
   padding: 70px 0;
   font-size: 16px;
@@ -475,8 +476,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
 .card__content {
   --padding: 1.5rem;
   padding: var(--padding);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, #9167da), to(black));
-  background: linear-gradient(rgba(0, 0, 0, 0), #9167da 5%, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, rgba(176, 0, 224, 0.8)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(176, 0, 224, 0.8) 5%, black);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,16 +485,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.card__content--lightred {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, #9167da), to(black));
-  background: linear-gradient(rgba(0, 0, 0, 0), #9167da 5%, black);
-}
-
-.card__content--lightgreen {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, #9167da), to(black));
-  background: linear-gradient(rgba(0, 0, 0, 0), #9167da 5%, black);
 }
 
 .card__subtitle {
@@ -504,50 +495,14 @@ body._pc .menu__list > li:hover .menu__sub-list {
   padding: 0 0 7px 0;
 }
 
-.card__subtitle1::after {
+.card__subtitle::after {
   content: "";
   position: absolute;
   left: calc(var(--padding) * -1);
   bottom: 0;
   height: 4px;
   width: calc(100% + var(--padding));
-  background-color: #60cdc9;
-  -webkit-box-shadow: 0px 1px 11px -1px #000000;
-          box-shadow: 0px 1px 11px -1px #000000;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 500ms ease-out;
-  transition: -webkit-transform 500ms ease-out;
-  transition: transform 500ms ease-out;
-  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
-}
-
-.card__subtitle2::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--padding) * -1);
-  bottom: 0;
-  height: 4px;
-  width: calc(100% + var(--padding));
-  background-color: #A88ADD;
-  -webkit-box-shadow: 0px 1px 11px -1px #000000;
-          box-shadow: 0px 1px 11px -1px #000000;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 500ms ease-out;
-  transition: -webkit-transform 500ms ease-out;
-  transition: transform 500ms ease-out;
-  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
-}
-
-.card__subtitle3::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--padding) * -1);
-  bottom: 0;
-  height: 4px;
-  width: calc(100% + var(--padding));
-  background-color: #fe5a7c;
+  background-color: #b000e1;
   -webkit-box-shadow: 0px 1px 11px -1px #000000;
           box-shadow: 0px 1px 11px -1px #000000;
   -webkit-transform-origin: left;
@@ -581,26 +536,6 @@ body._pc .menu__list > li:hover .menu__sub-list {
 .card__btn2:hover, .card__btn2:focus {
   background-color: var(--clr-neutral-100);
   color: var(--clr-accent-400);
-}
-
-.card__btn1 {
-  background-color: #60cdc9;
-  color: var(--clr-neutral-100);
-}
-
-.card__btn1:hover, .card__btn1:focus {
-  background-color: var(--clr-neutral-100);
-  color: #60cdc9;
-}
-
-.card__btn3 {
-  background-color: #fe5a7c;
-  color: var(--clr-neutral-100);
-}
-
-.card__btn3:hover, .card__btn3:focus {
-  background-color: var(--clr-neutral-100);
-  color: #fe5a7c;
 }
 
 .card:hover .card__subtitle::after,

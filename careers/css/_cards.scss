@@ -1,11 +1,11 @@
 :root{
     --clr-neutral-900: hsl(207, 19%, 9%);
     --clr-neutral-100: hsl(0, 0%, 100%);
-    --clr-accent-400: #A88ADD;
+    --clr-accent-400: #b000e1;
 }
 
 .cards{
-    background-color: #9167da;
+    background-image: linear-gradient(#000, #b000e1, #000);
     position: relative;
     padding: 70px 0;
     font-size: 16px;
@@ -50,27 +50,11 @@
         padding: var(--padding);
         background: linear-gradient(
             rgba(0,0,0,0),
-            #9167da 5%,
+            rgba(176, 0, 224, 0.8) 5%,
             rgba(0,0,0,1)
             );
         display: flex;
         flex-direction: column;
-
-        &--lightred{
-            background: linear-gradient(
-            rgba(0,0,0,0),
-            #9167da 5%,
-            rgba(0,0,0,1)
-            );
-        }
-
-        &--lightgreen{
-            background: linear-gradient(
-            rgba(0,0,0,0),
-            #9167da 5%,
-            rgba(0,0,0,1)
-            );
-        }
     }
 
     &__subtitle{
@@ -79,42 +63,14 @@
         padding: 0 0 7px 0;
     }
 
-    &__subtitle1::after{
+    &__subtitle::after{
         content: "";
         position: absolute;
         left: calc(var(--padding) * -1);
         bottom: 0;
         height: 4px;
         width: calc(100% + var(--padding));
-        background-color: rgb(96, 205, 201);
-        box-shadow:0px 1px 11px -1px #000000;
-        transform-origin: left;
-
-        transition: transform 500ms ease-out;
-    }
-    
-    &__subtitle2::after{
-        content: "";
-        position: absolute;
-        left: calc(var(--padding) * -1);
-        bottom: 0;
-        height: 4px;
-        width: calc(100% + var(--padding));
-        background-color: #A88ADD;
-        box-shadow:0px 1px 11px -1px #000000;
-        transform-origin: left;
-
-        transition: transform 500ms ease-out;
-    }
-
-    &__subtitle3::after{
-        content: "";
-        position: absolute;
-        left: calc(var(--padding) * -1);
-        bottom: 0;
-        height: 4px;
-        width: calc(100% + var(--padding));
-        background-color: rgb(254, 90, 124);
+        background-color: #b000e1;
         box-shadow:0px 1px 11px -1px #000000;
         transform-origin: left;
 
@@ -145,28 +101,6 @@
     &__btn2:focus{
         background-color: var(--clr-neutral-100);
         color: var(--clr-accent-400);
-    }
-
-    &__btn1{
-        background-color: rgb(96, 205, 201);
-        color: var(--clr-neutral-100);
-    }
-
-    &__btn1:hover,
-    &__btn1:focus{
-        background-color: var(--clr-neutral-100);
-        color: rgb(96, 205, 201);
-    }
-
-    &__btn3{
-        background-color: rgb(254, 90, 124);
-        color: var(--clr-neutral-100);
-    }
-
-    &__btn3:hover,
-    &__btn3:focus{
-        background-color: var(--clr-neutral-100);
-        color: rgb(254, 90, 124);
     }
 }
 
