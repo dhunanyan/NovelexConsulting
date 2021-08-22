@@ -502,7 +502,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   bottom: 0;
   height: 4px;
   width: calc(100% + var(--padding));
-  background-color: #b000e1;
+  background-color: #c4009a;
   -webkit-box-shadow: 0px 1px 11px -1px #000000;
           box-shadow: 0px 1px 11px -1px #000000;
   -webkit-transform-origin: left;
@@ -522,7 +522,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   display: inline;
   text-decoration: none;
   color: var(--clr-neutral-900);
-  background-color: var(--clr-accent-400);
+  background-color: #c4009a;
   padding: 0.5em 1.25em;
   font-size: 16px;
   border-radius: 0.25em;
@@ -534,7 +534,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .card__btn2:hover, .card__btn2:focus {
-  background-color: var(--clr-neutral-100);
+  background-color: #c4009a;
   color: var(--clr-accent-400);
 }
 
