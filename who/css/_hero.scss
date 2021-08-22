@@ -1,0 +1,30 @@
+.hero{
+    padding-top: 70px;
+    font-size: 16px;
+    color: #fff;
+    
+    &__template{
+        background-image: url("../img/hero-background1.jpg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: repeat;
+        padding: 10px 0 80px 0;
+    }
+
+    &__content{
+        padding: 450px 0 0 0;
+    }
+
+    &__descr{
+        display: flex;
+        align-items: center;
+    }
+
+    &__line{
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 0 0 10px;
+    }
+}
