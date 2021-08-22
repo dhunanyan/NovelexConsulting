@@ -5,7 +5,7 @@
 }
 
 .cards{
-    background-image: linear-gradient(180deg,#231F20, #317EAA, #231F20);
+    background-image: linear-gradient(180deg,#231F20, rgb(49, 126, 170), #231F20);
     position: relative;
     padding: 40px 0 120px 0;
     font-size: 16px;
@@ -104,7 +104,7 @@
         padding: var(--padding);
         background: linear-gradient(
             rgba(0,0,0,0),
-            rgba(18, 89, 129, 0.8) 20%,
+            rgba(18, 89, 129, 0.8) 5%,
             rgba(0,0,0,1)
         );
         display: flex;

@@ -778,4 +778,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
     margin-top: 25px;
   }
 }
+
+.active {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

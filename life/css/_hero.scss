@@ -1,0 +1,26 @@
+.hero{
+    padding: 70px 0;
+    font-size: 16px;
+    color: #fff;
+    background-image: url("../img/hero-background3.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: repeat;
+
+    &__content{
+        padding: 450px 0 0 0;
+    }
+
+    &__descr{
+        display: flex;
+        align-items: center;
+    }
+
+    &__line{
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 0 0 10px;
+    }
+}

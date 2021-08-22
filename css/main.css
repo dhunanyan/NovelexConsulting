@@ -477,8 +477,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
 }
 
 .cards {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#231F20), color-stop(#317EAA), to(#231F20));
-  background-image: linear-gradient(180deg, #231F20, #317EAA, #231F20);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#231F20), color-stop(#317eaa), to(#231F20));
+  background-image: linear-gradient(180deg, #231F20, #317eaa, #231F20);
   position: relative;
   padding: 40px 0 120px 0;
   font-size: 16px;
@@ -594,8 +594,8 @@ body._pc .menu__list > li:hover .menu__sub-list {
 .card__content {
   --padding: 1.5rem;
   padding: var(--padding);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(20%, rgba(18, 89, 129, 0.8)), to(black));
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(18, 89, 129, 0.8) 20%, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(5%, rgba(18, 89, 129, 0.8)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(18, 89, 129, 0.8) 5%, black);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
