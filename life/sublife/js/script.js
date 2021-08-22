@@ -88,18 +88,17 @@ document.querySelectorAll('a.yakor').forEach(link => {
 var tl = new TimelineMax({ onUpdate: updatePercentage });
 var tl1 = new TimelineMax({ onUpdate: updatePercentage });
 var tl2 = new TimelineMax({ onUpdate: updatePercentage });
-var tl3 = new TimelineMax({ onUpdate: updatePercentage });
 const controller = new ScrollMagic.Controller();
 
 tl.from(".purpose-title", 1, { x: 50, opacity: 0 });
 tl.from(".purpose-line", 1, { width: 0 }, "=-.5");
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: "#purpose",
+    triggerElement: "#language",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#purposes")
+    .setPin("#languages")
     .setTween(tl1)
     .addTo(controller);
 
@@ -108,11 +107,11 @@ tl1.from(".value__title", 1, { x: 50, opacity: 0 });
 tl1.from(".value__line", 1, { width: 0 }, "=-.5");
 
 const scene1 = new ScrollMagic.Scene({
-    triggerElement: "#value",
+    triggerElement: "#digital",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#values")
+    .setPin("#digitals")
     .setTween(tl1)
     .addTo(controller);
 
@@ -120,35 +119,20 @@ tl2.from(".mission__title", 1, { x: 50, opacity: 0 });
 tl2.from(".mission__line", 1, { width: 0 }, "=-.5");
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: "#mission",
+    triggerElement: "#hire",
     triggerHook: "onEnter",
     duration: "100%"
 })
-    .setPin("#missions")
+    .setPin("#hires")
     .setTween(tl2)
     .addTo(controller);
-
-tl3.from(".strategy__title", 1, { x: 50, opacity: 0 });
-tl3.from(".strategy__line", 1, { width: 0 }, "=-.5");
-
-const scene3 = new ScrollMagic.Scene({
-    triggerElement: "#strategy",
-    triggerHook: "onEnter",
-    duration: "100%"
-})
-    .setPin("#strategys")
-    .setTween(tl3)
-    .addTo(controller);
-
 
 function updatePercentage() {
     //percent.innerHTML = (tl.progress() *100 ).toFixed();
     tl.progress();
     tl1.progress();
     tl2.progress();
-    tl3.progress();
     console.log(tl.progress());
     console.log(tl1.progress());
     console.log(tl2.progress());
-    console.log(tl3.progress());
 }

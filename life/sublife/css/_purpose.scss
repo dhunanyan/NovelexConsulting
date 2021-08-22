@@ -38,6 +38,7 @@
         width: calc(50% - 15px);
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     &__title{
@@ -65,19 +66,6 @@
     }
 }
 
-@media(max-width: 920px){
-    .purpose{
-
-        &__square-img{
-            display: block;
-        }
-
-        &__main-img{
-            display: none;
-        }
-    }
-}
-
 @media(max-width: 810px){
     .purpose{
 
@@ -92,14 +80,6 @@
         &__content{
             width: 100%;
             margin: 30px 0 0 0;
-        }
-
-        &__square-img{
-            display: none;
-        }
-
-        &__main-img{
-            display: block;
         }
 
         &__img--order-2{
@@ -117,14 +97,6 @@
 
         &__line{
             width: 100%;
-        }
-
-        &__square-img{
-            display: block;
-        }
-
-        &__main-img{
-            display: none;
         }
     }
 }
