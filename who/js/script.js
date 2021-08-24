@@ -87,10 +87,17 @@ document.querySelectorAll('a.yakor').forEach(link => {
 
 const cards = document.querySelectorAll('.card');
 if(cards.length > 0){
+
     cards.forEach(card => {
-            card.addEventListener("click", function(e){
-                card.classList.toggle('_active');
-            });
-        }
-    )
+        card.addEventListener("click", function(e){
+			const activeCards = document.querySelectorAll('.card._active');
+
+			if(activeCards.length > 0){
+				cards.forEach(card => {
+				card.classList.remove('_active');
+				});
+			}
+			e.target.classList.toggle('_active');
+        });
+    })
 }
