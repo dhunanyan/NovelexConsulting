@@ -158,53 +158,49 @@
     }
 }
 
-.card:hover .card__subtitle::after,
-.card:focus-within .card__subtitle::after{
+.card._active .card__subtitle::after{
     transform: scaleX(1);
 ;}
 
-.card:focus-within .card__content > *:not(.card__subtitle){
+.card._active .card__content > *:not(.card__subtitle){
     transition-delay: 300ms;
 }
 
-@media(hover){
-    .card{
-        
-        &__content{
-            transform: translateY(65%);
-            transition: transform 500ms ease 500ms;
-        }
-
-        &__content > *:not(.card__subtitle){
-            opacity: 0;
-            transition: opacity 500ms linear;
-        }
-
-        &__subtitle::after{
-            transform: scaleX(0);
-        }
-    }
+.card{
     
-    .card:hover,
-    .card:focus-within{
-        transform: scale(1.05);
-    }
-    
-    .card:hover .card__content,
-    .card:focus-within .card__content{
-        transform: translateY(0);
-        transition-delay: 500ms;
+    &__content{
+        transform: translateY(65%);
+        transition: transform 500ms ease 500ms;
     }
 
-    .card:focus-within .card__content{
-        transition-duration: 0ms;
+    &__content > *:not(.card__subtitle){
+        opacity: 0;
+        transition: opacity 500ms linear;
     }
 
-    .card:hover .card__content > *:not(.card__subtitle),
-    .card:focus-within .card__content > *:not(.card__subtitle){
-        opacity: 1;
-        transition-delay: 1000ms
+    &__subtitle::after{
+        transform: scaleX(0);
     }
+}
+
+.card._active,
+.card:hover,
+.card:focus-within{
+    transform: scale(1.05);
+}
+
+.card._active .card__content{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card._active .card__content > *:not(.card__subtitle){
+    opacity: 1;
+    transition-delay: 1000ms
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 @media(max-width: 811px){

@@ -83,6 +83,18 @@ document.querySelectorAll('a.yakor').forEach(link => {
 	});
 })
 
+//CARDS
+
+const cards = document.querySelectorAll('.card');
+if(cards.length > 0){
+    cards.forEach(card => {
+            card.addEventListener("click", function(e){
+                card.classList.toggle('_active');
+            });
+        }
+    )
+}
+
 //SLIDER
 
 $(document).ready(function () {

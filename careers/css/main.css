@@ -565,57 +565,58 @@ body._pc .menu__list > li:hover .menu__sub-list {
   color: #c4009a;
 }
 
-.card:hover .card__subtitle::after,
-.card:focus-within .card__subtitle::after {
+.card._active .card__subtitle::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.card:focus-within .card__content > *:not(.card__subtitle) {
+.card._active .card__content > *:not(.card__subtitle) {
   -webkit-transition-delay: 300ms;
           transition-delay: 300ms;
 }
 
-@media (hover) {
-  .card__content {
-    -webkit-transform: translateY(65%);
-            transform: translateY(65%);
-    -webkit-transition: -webkit-transform 500ms ease 500ms;
-    transition: -webkit-transform 500ms ease 500ms;
-    transition: transform 500ms ease 500ms;
-    transition: transform 500ms ease 500ms, -webkit-transform 500ms ease 500ms;
-  }
-  .card__content > *:not(.card__subtitle) {
-    opacity: 0;
-    -webkit-transition: opacity 500ms linear;
-    transition: opacity 500ms linear;
-  }
-  .card__subtitle::after {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  .card:hover,
-  .card:focus-within {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .card:hover .card__content,
-  .card:focus-within .card__content {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition-delay: 500ms;
-            transition-delay: 500ms;
-  }
-  .card:focus-within .card__content {
-    -webkit-transition-duration: 0ms;
-            transition-duration: 0ms;
-  }
-  .card:hover .card__content > *:not(.card__subtitle),
-  .card:focus-within .card__content > *:not(.card__subtitle) {
-    opacity: 1;
-    -webkit-transition-delay: 1000ms;
-            transition-delay: 1000ms;
-  }
+.card__content {
+  -webkit-transform: translateY(65%);
+          transform: translateY(65%);
+  -webkit-transition: -webkit-transform 500ms ease 500ms;
+  transition: -webkit-transform 500ms ease 500ms;
+  transition: transform 500ms ease 500ms;
+  transition: transform 500ms ease 500ms, -webkit-transform 500ms ease 500ms;
+}
+
+.card__content > *:not(.card__subtitle) {
+  opacity: 0;
+  -webkit-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+
+.card__subtitle::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.card._active,
+.card:hover,
+.card:focus-within {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card._active .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.card._active .card__content > *:not(.card__subtitle) {
+  opacity: 1;
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1021px) {
