@@ -528,6 +528,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  pointer-events: none;
 }
 
 .card__subtitle {
@@ -567,6 +568,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
   border-radius: 0.25em;
   font-weight: 500;
   margin: 0 auto 0 0;
+  pointer-events: all;
   -webkit-transition: all 450ms ease-out;
   transition: all 450ms ease-out;
 }
